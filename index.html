@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <script type="text/javascript" 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <ul class="menu">
+                    <li onclick="menu_click(this, 'tab1')">Pagina 1</li>
+                    <li onclick="menu_click(this, 'tab2')">Pagina 2</li>
+                    <li onclick="menu_click(this, 'tab3')">Pagina 3</li>
+                </ul>
+            </div>
+
+            <div class="body">
+
+                <!-- aqui añado y elimino las pestañas laterales -->
+                <ul class="tabs-open"></ul>
+
+                <div class="frame-wrapper">
+                    <iframe id="tab1" src="https://www.youtube.com/embed/3qhAvPmh-Vw" frameborder="0" allowfullscreen></iframe>   
+                    <iframe id="tab2" src="https://www.youtube.com/embed/-RkvfWWmt68" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="tab3" src="https://www.marcosbustamantemateo.com" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+        <script type="text/javascript" src="funtions.js"></script>
+    </body>
+</html> 

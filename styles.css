@@ -1,0 +1,106 @@
+html, body { 
+    height: 100%; 
+    overflow: hidden;
+}
+
+@media (max-width: 1000px){
+    header{
+        flex-direction: column;            
+        align-items: left;
+    }
+}
+
+.container {
+    height: 100%;
+}
+
+.body {
+    height: 100%;
+}
+
+.header {
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px -2px 5px 0px rgba(0,0,0,0.75);
+    margin: 10px;
+    display: flex;        
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.frame-wrapper {
+    display: inline-block;
+}
+
+.frame-wrapper * {
+    display: none;
+}
+
+.tabs-open {
+    max-width: 109px;
+    margin: 0;
+    margin-left: 10px;
+    padding-left: 5px;
+    height: 84%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px -2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.tabs-open * {
+    display: inline-flex;
+}
+
+.tabs-open li:first-child {
+    margin-top: 10px;
+}
+
+.tabs-open li {
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.tabs-open li span {
+    color: red;
+    font-size: xx-small;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.tabs-open li :hover{
+    background-color: white;
+}
+
+.tab1 .tab2 .tab3 {
+    display: none;
+}
+
+iframe {
+    height: 84vh;
+    width: 90.70vw;
+    position: absolute;
+    top: 117px;
+    left: 142px;
+    bottom: 0;
+    right: 0;
+    border: none;
+}
+
